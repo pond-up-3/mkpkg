@@ -13,5 +13,5 @@ def cb(request, response):
 
 rclpy.init()
 node = Node("talker")
-srv = node.create_service(Query, "Query", cb)
+srv = node.create_service(Query, "query", cb)
 rclpy.spin(node)
